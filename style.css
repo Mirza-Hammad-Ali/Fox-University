@@ -1,0 +1,516 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 30px 0;
+  margin-bottom: -30px;
+}
+.logo h2 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #555;
+  margin: 0;
+  line-height: 2rem;
+}
+.logo span {
+  font-size: 0.8rem;
+  color: #555;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.contact-info i {
+  color: #ff6600;
+  margin-right: 8px;
+}
+.apply-btn {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+.apply-btn:hover {
+  background-color: #e65c00;
+  transform: translateY(-3px);
+}
+/* navbar */
+.custom-nav {
+  background-color: #0b0e25;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.nav-link.active {
+  color: #ff6600;
+}
+
+.nav-link:hover {
+  color: #ff6600;
+}
+
+.search-box input {
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 50px;
+  color: #ccc;
+  padding: 8px 20px;
+}
+
+.search-box input::placeholder {
+  color: #aaa;
+}
+
+.search-box button {
+  border: none;
+  background-color: transparent;
+  color: #ccc;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("/src/bg_1.webp");
+  height: 100vh;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.btn-orange {
+  background-color: #fd5f00;
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background-color: #e05400;
+}
+/* Features */
+
+.bg-orange {
+  background-color: #fd5f00;
+}
+
+.bg-darkblue {
+  background-color: #0a1a2f;
+}
+
+.features i {
+  color: #fff;
+}
+.feature-box {
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* We offer Section */
+.we-offer {
+  margin-top: -48px;
+}
+.offer-card {
+  margin-bottom: 30px;
+}
+.offer-card p {
+  font-size: 17px;
+}
+.offer-img img {
+  height: 800px;
+}
+
+/* Fox University About Section */
+
+.overlay-bg {
+  position: relative;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  margin-top: -47px;
+}
+
+.overlay-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(156, 36, 0, 0.675),
+    rgba(255, 102, 0, 0.3)
+  );
+  z-index: 0;
+}
+
+.overlay-bg .container {
+  position: relative;
+  z-index: 1;
+  padding-top: 60px;
+}
+
+.fox-uni {
+  margin-top: 30px;
+}
+
+.overlay-bg h2 {
+  font-size: 48px;
+}
+
+.overlay-bg p {
+  font-size: 20px;
+}
+.video-thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #fd5f00;
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 15px 20px;
+}
+
+.stats-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.about-cards {
+  margin-bottom: 12vh;
+}
+
+.stats-box:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.stats-box h3 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.stats-box p {
+  font-size: 20px;
+}
+
+/* Our Course */
+
+.course-text {
+  margin-top: 35px;
+}
+.course-text h2 {
+  font-size: 44px;
+  line-height: 1.8;
+}
+
+.course-text p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Course Cards */
+
+.course-card {
+  height: 100%;
+  margin: 10px;
+}
+.card img {
+  height: 700px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* .card-img-top {
+  height: 300px; 
+  object-fit: cover;
+} */
+.card {
+  /* height: 200vh; */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.card-main {
+  height: 120vh;
+}
+.card-body i {
+  color: #fd5f00;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-warning {
+  background-color: #fd5f00;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #fd5f00;
+}
+/* Certified teachers  */
+
+.teachers-text {
+  margin-top: 35px;
+}
+.teachers-text h2 {
+  font-size: 44px;
+  line-height: 1.8;
+}
+
+.teachers-text p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+/* Teachers */
+
+.teachers-card img {
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  /* transition: transform 0.3s ease; */
+}
+/* .teachers-card:hover img {
+  transform: scale(1.02);
+} */
+
+.teachers-card {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.teachers-card:hover {
+  transform: translateY(-5px);
+  color: #fd5f00;
+}
+.main-teacher-card {
+  height: 600px;
+  width: 25%;
+  margin-bottom: 13vh;
+}
+.t-card-t {
+  margin-top: 15px;
+}
+.t-card-t p {
+  font-size: large;
+  text-align: center;
+}
+
+.text-warning {
+  color: #fd5f00 !important;
+}
+
+/* Quote Section */
+
+.quote-section {
+  background:
+    linear-gradient(rgba(255, 102, 0, 0.6), rgba(255, 102, 0, 0.6)),
+    url("/src/bg_5.webp") center/cover no-repeat;
+  min-height: 100vh;
+  color: #fff;
+}
+.quote-text p{
+  font-size: large;
+}
+.form-control,
+.form-select {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.btn-warning {
+  background-color: #fd5f00;
+  border: none;
+}
+.btn-course{
+  border-radius: 12px;
+  padding: 12px 30px;
+  margin: 0 10px;
+}
+.btn-warning:hover {
+  background-color: #e65c00;
+}
+
+/* Upcoming Events */
+.event-text{
+  margin-top: 50px;
+}
+.event-text h2 {
+  font-size: 48px;
+  line-height: 1.9;
+}
+
+.event-text p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Events */
+
+.date-box {
+  margin-top: 20px;
+  width: 20px;
+  height: 90px;
+
+}
+
+.event-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-warning {
+  background-color: #fd5f00;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e65c00;
+}
+
+/* Recent Blogs */
+
+h2 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Blogs */
+
+.date-box {
+  border-radius: 5px;
+  width: 70px;
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-warning {
+  background-color: #fd5f00;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e65c00;
+}
+
+/* Testimonial */
+h2 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Testimonial Cards */
+img.rounded-circle {
+  border: 3px solid #fd5f00;
+}
+
+.text-warning {
+  color: #fd5f00 !important;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Photo Grid */
+img {
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  overflow: hidden;
+}
+
+/* Footer */
+
+footer {
+  font-size: 15px;
+}
+
+footer h5 {
+  border-bottom: 2px solid #fd5f00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+footer .btn-primary {
+  background-color: #6c63ff;
+  border: none;
+}
+
+footer .btn-primary:hover {
+  background-color: #5a52e0;
+}
